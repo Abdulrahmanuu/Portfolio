@@ -1,0 +1,352 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  font-family: 'Ubuntu', sans-serif;
+  scroll-behavior: smooth;
+
+}
+/* small */
+@media (max-width:800px) and (min-width: 0px){
+  body{
+    font-size: 9px;
+  }
+  .content{
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+  }
+  .content .image {
+    height: 50%;
+    margin: auto;
+    width: 100%;
+  }
+  .content .image img{
+    height: 350px;
+    width: 80%;
+  }
+  .content .text-con{
+    width: 100%;
+    font-size: 10px;
+    padding-top: 180px;
+    margin: auto;
+  }
+  .cards .card p, .cards .card h2{
+    width: 60%;
+  }
+}
+@media (min-width: 801px) and (max-width: 990px){
+  .container {
+    width: 100%;
+  }
+  body{
+    font-size: 10px;
+  }
+  content{
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+  }
+  .content .image {
+    height: 50%;
+    margin: auto;
+    width: 100%;
+  }
+  .content .image img{
+    width: 80%;
+    height: 350px;
+  }
+  .content .text-con{
+    width: 100%;
+    font-size: 10px;
+    padding-top: 100px;
+    margin: auto;
+  }
+}
+/* Medium */
+@media (min-width: 991px) and (max-width:1180px){
+  .container {
+    width: 80%;
+  }
+  body{
+    font-size: 12px;
+  }
+  content{
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+  }
+  .content .image {
+    height: 50%;
+    margin: auto;
+  }
+  .content .image img{
+    width: 400px;
+    height: 400px;
+  }
+  .content .text-con{
+    font-size: 13px;
+    padding-top: 80px;
+    margin: auto;
+  }
+}
+/* Large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+.container{
+  width: 100%;
+  background: rgb(128, 128, 128);
+  box-shadow: 0em .4em .5em #444;
+  border-radius: 0 0 .4em .4em;
+  position: fixed;
+  z-index: 5;
+}
+.container nav{
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  flex-flow: row wrap;
+}
+nav ul{
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.1em;
+}
+ a{
+  text-decoration: none;
+}
+nav ul li{
+  padding: 0 .7em;
+}
+nav ul li a{
+  font-size: 1.1em;
+  color: #606;
+  font-weight: 400;
+  letter-spacing: .05em;
+}
+nav .logo{
+  font-size: 1.9em;
+  color: #909;
+  font-weight: 600;
+  letter-spacing: .09em;
+  text-transform: uppercase;
+}
+nav ul li a:hover{
+  color: #660;
+}
+main{
+  height: 100vh;
+  background-color: #222;
+  width: 100%;
+  background-attachment: fixed;
+}
+.content{
+  width: 80%;
+  height: 100%;
+  padding:0 1.1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: row wrap;
+  margin: auto;
+  overflow: hidden;
+}
+.content .text-con h3 {
+  color: ghostwhite;
+  opacity: .8;
+  font-size: 1.5em;
+  font-weight: bold;
+  padding-bottom: .8em;
+  letter-spacing: .05em;
+}
+.content .text-con h2{
+  font-size: 2.1em;
+  font-weight: 700;
+  color: #313DB9;
+}
+.content .text-con p{
+  color: whitesmoke;
+  opacity: .8;
+  text-transform: capitalize;
+  padding-top: .4em;
+  font-size: 1.2em;
+  letter-spacing: .006em;
+  padding-bottom: .7em;
+}
+.content .text-con [href="#aboutme"]{
+  background-color: #000;
+  padding: .1em 1em;
+  color: whitesmoke;
+  opacity: .9;
+  border-radius: .5em;
+  font-size: 1.25em;
+  font-style: italic;
+  transition: .4s;
+}
+.content .text-con .icons{
+  padding: 1em 1.1em;
+}
+.content .text-con .icons a{
+  color: white;
+  font-size: 1.35em;
+  padding-right: .8em;
+  transition: 0.4s;
+  animation: zoom 1s ease infinite alternate;
+}
+@keyframes zoom{
+  to{
+    opacity: .4;
+  }
+}
+.content .rotate span {
+  display: inline-block;
+}
+.content .rotate{
+  width: 5em;
+}
+.content .rotate .a{
+  width: 30%;
+  height: .5em;
+  background-color: #429C20;
+  transition: .3s;
+  animation: a .4s ease infinite alternate-reverse;
+}
+@keyframes a{
+  to{
+    width: 100%;
+    background-color: #D05C5C;
+    height: .4em;
+  }
+}
+.content .text-con [href="#aboutme"]:hover{
+  background-color: red;
+}
+/* end main*/
+[class="title"]{
+  display: flex;
+  justify-content: center;
+  padding-top: 2.2em;
+  padding-bottom: .8em;
+  color: #C0BFBB;
+  text-transform: uppercase;
+  font-size: 1.8em;
+  font-weight: 500;
+}
+#aboutme{
+  background: linear-gradient( to right, #222222, #333333, #666666);
+  opacity: .8;
+  height: 100vh
+}
+.About .text-about{
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  height: 100%;
+  gap: 2em;
+  padding-top: 2.8em;
+}
+.code{
+  max-width: 300px;
+  background-color: #FFFFFFC4;
+  padding: 2em 2.5em;
+  border-radius: 1.2em;
+  text-align: center;
+  box-shadow: 0 2em .8em black;
+}
+.first-a i, .secound-b i, .third-c i{
+  font-size: 3.8em;
+  padding-bottom: .6em;
+}
+.text-about h3{
+  padding-bottom: .35em;
+  font-size: 1.3em;
+  letter-spacing: .02em;
+}
+.text-about p{
+  line-height: 1.2em;
+}
+#services{
+  height: 100vh;
+  background-image: linear-gradient(to right, #111111C4, #222222B8, #333333BD, #444444E8), url(/٢٠٢٤٠٢٠٣_١١٣٢٤٦.png);
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 .6em .5em black;
+}
+.cards{
+  padding: 3em 0 1em 5em;
+}
+.cards .card{
+  word-wrap: wrap;
+  width: 40em;
+  padding-bottom: 4em;
+  color: whitesmoke;
+}
+.cards .card h2{
+  font-size: 1.8em;
+  letter-spacing: .03em;
+  text-transform: capitalize;
+  border-block: solid .2em black;
+}
+.cards .card p{
+  padding-top: .76em;
+  letter-spacing: .02em;
+  font-weight: 500;
+}
+#contact{
+  max-height: 60vh;
+  background: linear-gradient(to right, #444444, #222222, #666666);
+}
+.cards-contact {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-flow: row wrap;
+  gap: 1em;
+  padding: 2em;
+}
+.cards-contact .card{
+  background: linear-gradient(to right, #FBDFDF, #F8B4B4, #F6F6F66E, #C7D3B98F);
+  padding: 1.2em;
+  border-radius: .8em;
+  text-align: center;
+}
+.cards-contact .card i{
+  font-size: 3em;
+  padding-bottom: .4em;
+}
+#contact hr{
+  border: .1em solid #686B82;
+}
+.footer, .footer a{
+  color: white;
+}
+.footer{
+  display: flex;
+  justify-content: space-around;
+  padding: 1em;
+}
+.footer .copy {
+ font-size: 1.1em;
+}
+.footer .icons{
+  font-size: 1.3em;
+}
+.footer .icons a{
+  padding-left: .6em;
+}
+.card{
+  transition: .3s
+}
+.card:hover{
+  transform: scale(1.1)
+}
